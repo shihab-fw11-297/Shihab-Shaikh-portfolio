@@ -623,6 +623,7 @@ font-size: 1.3rem;
     width: 295px;
     margin-left: var(--mb-0-25);
     justify-self: center;
+    border: 1px solid black;
 }
 .portfolio-description{
     margin-bottom: var(--mb-0-75);
