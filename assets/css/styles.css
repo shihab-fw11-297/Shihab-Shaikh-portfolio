@@ -142,7 +142,7 @@ img{
     bottom: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: var(--body-color);
+    background-color: hsl(var(--hue-color), 60%, 98%);
 }
 /*==================== NAV ====================*/
 .nav{
@@ -225,6 +225,7 @@ img{
 /* Active link */
 .active-link{
     color: var(--first-color);
+    text-decoration: solid underline var(--first-color) 3px;
 }
 
 /* Change background header */
@@ -430,6 +431,7 @@ font-size: 1.3rem;
     cursor: pointer;
 }
 
+
 .skills-arrow,
 .skills-icon{
     font-size: 2rem;
@@ -489,7 +491,7 @@ font-size: 1.3rem;
 }
 
 .skill-CSS{
-    width: 90%;
+    width: 80%;
 }
 
 .skill-js{
@@ -497,21 +499,27 @@ font-size: 1.3rem;
 }
 
 .skill-react{
-    width: 60%;
+    width: 70%;
 }
 
 .skill-express{
-    width: 80%;
+    width: 60%;
 }
 .skill-node{
-    width: 80%;
+    width:60%;
 }
 .skill-mongodb{
-    width: 70%;
+    width: 60%;
 }
-.skill-firebase{
+.skill-GIT{
+    width: 80%;
+}
+.skill-Visual{
+    width: 90%;
+}
+/* .skill-firebase{
     width: 30%;
-}
+} */
 
 .skills-close .skills-list{
     height: 0;
