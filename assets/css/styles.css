@@ -130,12 +130,18 @@ img{
     max-width: 768px;
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
+  
 }
 .grid{
     display: grid;
     gap: 1.5rem;
 }
 
+.grids{
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(4, 1fr);
+}
 .header{
     width: 100%;
     position: fixed;
@@ -421,9 +427,6 @@ font-size: 1.3rem;
 
 
 /*==================== SKILLS ====================*/
-.skill-container{
-    row-gap: 0;
-}
 .skillsHeader{
     display: flex;
     align-items: center;
@@ -450,25 +453,35 @@ font-size: 1.3rem;
     color: var(--text-color-light);
 }
 
+
+
 .skills-arrow{
     margin-left: auto;
     transition: .4s;
 }
 
+.skills-img{
+    width: 6.25rem;
+    height: 6.25rem;
+    margin-left: 27%;
+}
+
 .skills-list{
-    row-gap: 1.5rem;
-    padding-left: 2.7rem;
+    width: fit-content;
+}
+.skills-data{
+    width: 12.5rem;
 }
 
 .skills-title{
-    display: flex;
-    justify-content: space-between;
     margin-bottom: var(--mb-0-5);
 }
 
 .skills-name{
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
+    margin: auto;
+    text-align: center;
 }
 
 .skills-bar,
@@ -881,7 +894,7 @@ font-size: 1.3rem;
 }
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 380px) {
     .container{
         margin-left: var(--mb-1);
         margin-right: var(--mb-1);
@@ -920,9 +933,22 @@ font-size: 1.3rem;
     .testimonial-description{
         text-align: center;
     }
+    .grids{
+        display: grid;
+        gap: 0.5rem;
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+    }
+
+
 }
 
 /* For medium devices */
+/* @media screen and (max-width: 568px){
+.skills-content{
+    border: 1px solid black;
+}
+} */
 
 @media screen and (min-width: 568px){
     .home-content{
@@ -931,12 +957,14 @@ font-size: 1.3rem;
     .homescroll{
         display: none;
     }
+  
     .home-data{
         grid-column: initial;
     }
     .about-img{
         width: 300px;
     }
+    
     .home-blob-img{
         order: 1;
         justify-self: center;
@@ -948,13 +976,117 @@ font-size: 1.3rem;
     .footer-container{
         grid-template-columns: repeat(2, 1fr);
     }
-    .qualification,
-    .skill-container{
+    .qualification{
         display: grid;
         grid-template-columns: .6fr;
         justify-content: center;
     }
+    .skills-list,
+    .skills-container{
+        width: fit-content;
+    }
+    
+   
 }
+
+@media only screen and (max-device-width : 350px){
+    .grids{
+        display: grid;
+        gap: 0.0rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .skills-content{
+        margin-left: 5%;
+    }
+    .home-data{
+        width: 250px;
+    }
+    .portfolio-data{
+        width: 100%;
+    }
+    .btn-icon{
+        display: none;
+    }
+}
+@media only screen and (min-device-width : 350px) and (max-device-width : 568px) {
+    .grids{
+        display: grid;
+        gap: 0.0rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .skills-img{
+        width: 6.25rem;
+        height: 6.25rem;
+    }
+
+    .skills-content{
+        margin-left: 5%;
+    }
+
+    .skills-data{
+        width: 8rem;
+    }
+    .skills-name{
+        margin-left: 9%;
+    }
+    
+    .skillsHeader{
+        width: 350px;
+    }
+    .skills-list{
+        width: 350px;
+    }
+
+    }
+
+    
+@media only screen and (min-device-width : 568px) and (max-device-width : 720px) {
+    .grids{
+        display: grid;
+        gap: 0.0rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .skills-img{
+        width: 6.25rem;
+        height: 6.25rem;
+    }
+    .skills-content{
+        margin-left: 10%;
+    }
+
+    .skills-data{
+        width: 10rem;
+    }
+    .skills-name{
+        margin-left: 7%;
+    }
+    .skillsHeader{
+        width: 500px;
+    }
+    .footer{
+        width: auto;
+    }
+    }
+    
+    @media only screen and (min-device-width : 700px) and (max-device-width : 800px) {
+        .skillsHeader{
+            width: 700px;
+        }
+        .skills-list{
+            width: 700px;
+        }
+        .skills-data{
+            width: 10rem;
+        }
+        .swiper-button-prev{
+            left: 1rem;
+        }
+        .swiper-button-next{
+            right: -0.5rem;
+        }
+
+    }
 
 @media screen and (min-width: 768px){
     .container{
@@ -964,6 +1096,7 @@ font-size: 1.3rem;
     body{
         margin: 0;
     }
+    
     .section{
         padding: 6rem 0 2rem;
     }
@@ -1092,6 +1225,16 @@ font-size: 1.3rem;
         margin-top: 4.5rem;
     }
 
+    .skillsHeader{
+        width: 750px;
+    }
+    .skills-list{
+        width: 750px;
+    }
+    .skills-data{
+        width: 10rem;
+    }
+   
 }
 /* For large devices */
 
