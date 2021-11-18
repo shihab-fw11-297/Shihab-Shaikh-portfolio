@@ -190,6 +190,7 @@ a{
         transition: .3s;
     }
 }
+
 .nav-list{
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
