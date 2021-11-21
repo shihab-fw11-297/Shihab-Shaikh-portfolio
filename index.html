@@ -7,6 +7,8 @@
 
     <!--==================== UNICONS ====================-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
     <!--==================== SWIPER CSS ====================-->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
@@ -81,7 +83,7 @@
         <section class="home section" id="home">
             <div class="home-container container grid">
                 <div class="home-content grid">
-                    <div class="home-social">
+                    <div class="home-social" data-aos="fade-right">
                         <a href="https://linkedin.com/in/shihab-shaikh-608669158" target="_blank" class="home social-icon">
                             <i class="uil uil-linkedin-alt"></i>
                         </a>
@@ -94,7 +96,7 @@
                             <i class="uil uil-dribbble"></i>
                         </a>
                     </div>
-                    <div class="div home-img">
+                    <div class="div home-img" data-aos="fade-right">
                         <svg class="home-blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
                             <mask id="mask0" mask-type="alpha">
@@ -113,7 +115,7 @@
                             </g>
                         </svg>
                     </div>
-                    <div class="home-data">
+                    <div class="home-data" data-aos="fade-left">
                         <h1 class="home-title animate-charcter">Hi, I'am Shihab</h1>
                         <h3 class="home-subtitle">Full Stack Web Developer</h3>
                         <p class="home-descriptin">A passionate Full Stack Software Developer 🚀 having an experience of
@@ -147,9 +149,9 @@
             <span class="section_subtitles">My Introduction</span>
 
             <div class="about-container container grid">
-                <img src="assets/img/about.jpg" alt="" class="about-img">
+                <img src="assets/img/about.jpg" alt="" class="about-img" data-aos="fade-up-right">
 
-                <div class="about-data">
+                <div class="about-data" data-aos="fade-in">
                     <p class="about-description">Hi I'm Shihab, Aspiring Full-Stack Developer, skilled in both front-end
                         and back-end web development. Well versed in coding with React.js, Redux, HTML, CSS & Javascript
                         for the client-side, and maintaining databases and infrastructure using Node.js, Express.js &
@@ -188,7 +190,7 @@
             <div class="skill-container container">
                 <div>
                     <!--==================== SKILLS 1====================-->
-                    <div class="skills-content skills-open">
+                    <div class="skills-content skills-open" >
                         <div class="skillsHeader">
                             <i class="uil uil-brackets-curly skills-icon"></i>
                             <!-- <i class="uil uil-mailbox skills-icon"></i> -->
@@ -199,7 +201,7 @@
                             <i class="uil uil-angle-down skills-arrow"></i>
                         </div>
                         <div class="skills-list grids">
-                            <div class="skills-data">
+                            <div class="skills-data" data-aos="fade-in">
                                 <div class="skills-title">
                                     <img src="https://img.icons8.com/color/480/000000/html-5--v1.png" class="skills-img"/>
                                     <h3 class="skills-name">HTML</h3>
@@ -207,26 +209,26 @@
                              
                             </div>
                             <div class="skills-data">
-                                <div class="skills-title">
+                                <div class="skills-title" data-aos="fade-in">
                                     <img src="https://img.icons8.com/color/480/000000/css3.png" class="skills-img"/>
                                     <h3 class="skills-name">CSS</h3>
                             
                                 </div>
                             </div>
-                            <div class="skills-data">
+                            <div class="skills-data" data-aos="fade-in">
                                 <div class="skills-title">
                                     <img src="https://img.icons8.com/color/480/000000/react-native.png" class="skills-img"/>
                                     <h3 class="skills-name">React</h3>
                                 </div>
                             </div>
-                            <div class="skills-data">
+                            <div class="skills-data" data-aos="fade-in">
                                 <div class="skills-title">
                                     <img src="https://img.icons8.com/color/480/000000/javascript.png" class="skills-img"/>
                                     <h3 class="skills-name">JavaScript</h3>
                                 </div>
                             </div>
 
-                            <div class="skills-data">
+                            <div class="skills-data" data-aos="fade-in">
                                 <div class="skills-title">
                                     <img src="https://img.icons8.com/color/480/000000/redux.png" class="skills-img"/> 
                                     <h3 class="skills-name">Redux</h3>
@@ -234,7 +236,7 @@
                                
                             </div>
 
-                            <div class="skills-data">
+                            <div class="skills-data" data-aos="fade-in">
                                 <div class="skills-title">
                                     <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-ar21.svg" class="skills-img"/> 
                                     <h3 class="skills-name">Tailwind CSS</h3>
@@ -463,7 +465,7 @@
             <h2 class="section_title">Projects</h2>
             <span class="section_subtitles">Most Recent Work</span>
 
-            <div class="portfolio-container container swiper-container">
+            <div class="portfolio-container container swiper-container" data-aos="fade-in">
                 <div class="swiper-wrapper">
                     <!--==================== PORTFOLIO ====================-->
                     
@@ -683,7 +685,7 @@
             </div>
         </section>
         <!--==================== CONTACT ME ====================-->
-        <section class="contact section" id="contact">
+        <section class="contact section" id="contact" data-aos="fade-in">
             <h2 class="section_title">Contact Me</h2>
             <span class="section_subtitles">Get In Touch</span>
 
@@ -799,5 +801,12 @@
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
 </body>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    AOS.init({
+        delay:200,
+        duration:1100,
+        once:false
+    })
+</script>
 </html>
